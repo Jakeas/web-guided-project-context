@@ -12,7 +12,7 @@ const App = () => {
   // STEP 2 - Provide data to the component tree with
   // the Provider component
   return (
-    <TitleContext.Provider value={person}>
+    <TitleContext.Provider value={{ title, person }}>
       <Child />
     </TitleContext.Provider>
   );
