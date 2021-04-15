@@ -26,5 +26,7 @@ const Child = (props) => {
 const Grandchild = (props) => {
   // STEP 3 - consume data in a nested component from the
   // context Provider
-  return <h1>{props.title}</h1>;
+  const value = useContext(TitleContext);
+  console.log(value);
+  return <h1>{value}</h1>;
 };
