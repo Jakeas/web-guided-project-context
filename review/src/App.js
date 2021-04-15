@@ -1,4 +1,5 @@
 import React, { createContext, useState, useContext } from "react";
+import brad from "./data";
 
 // STEP 1 - create a context obj
 const TitleContext = createContext();
