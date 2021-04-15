@@ -10,8 +10,8 @@ const App = () => {
   // STEP 2 - Provide data to the component tree with
   // the Provider component
   return (
-    <TitleContext.Provider>
-      <Child title={title} />
+    <TitleContext.Provider value={title}>
+      <Child />
     </TitleContext.Provider>
   );
 };
@@ -20,7 +20,7 @@ export default App;
 
 // intermediary component (Dustin-ism)
 const Child = (props) => {
-  return <Grandchild title={props.title} />;
+  return <Grandchild />;
 };
 
 const Grandchild = (props) => {
