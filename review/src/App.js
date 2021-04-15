@@ -6,6 +6,9 @@ console.log(TitleContext);
 
 const App = () => {
   const [title, setTitle] = useState("Hello World");
+
+  // STEP 2 - Provide data to the component tree with
+  // the Provider component
   return (
     <TitleContext.Provider>
       <Child title={title} />
