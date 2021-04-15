@@ -7,6 +7,7 @@ console.log(TitleContext);
 
 const App = () => {
   const [title, setTitle] = useState("Hello World");
+  const [person, setPerson] = useState(brad);
 
   // STEP 2 - Provide data to the component tree with
   // the Provider component
