@@ -41,8 +41,10 @@ const Grandchild = () => {
   );
 };
 
-const addYear = (setPerson) => {
-  setPerson();
+const addYear = (setPerson, person) => {
+  setPerson({
+    ...person,
+  });
 };
 
 const Name = () => {
@@ -54,7 +56,9 @@ const Name = () => {
         {person.name.last}, {person.name.first}
       </h3>
       <p>Age: {person.dob.age}</p>
-      <button onClick={() => addYear(setPerson)}>Happy Birthday!</button>
+      <button onClick={() => addYear(setPerson, person)}>
+        Happy Birthday!
+      </button>
     </>
   );
 };
