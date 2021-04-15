@@ -1,7 +1,8 @@
 import React, { createContext, useState } from "react";
 
 // STEP 1 - create a context obj
-createContext();
+const TitleContext = createContext();
+console.log(TitleContext);
 
 const App = () => {
   const [title, setTitle] = useState("Hello World");
