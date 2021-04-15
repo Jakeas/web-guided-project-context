@@ -13,7 +13,7 @@ const App = () => {
   // the Provider component
   // { title, person } === { title: title, person: person }
   return (
-    <TitleContext.Provider value={[title, person, setPerson]}>
+    <TitleContext.Provider value={{ title, person, setPerson }}>
       <Child />
     </TitleContext.Provider>
   );
@@ -29,7 +29,7 @@ const Child = () => {
 const Grandchild = () => {
   // STEP 3 - consume data in a nested component from the
   // context Provider
-  const [title] = useContext(TitleContext);
+  const { title } = useContext(TitleContext);
 
   return (
     <>
@@ -42,7 +42,7 @@ const Grandchild = () => {
 };
 
 const Name = () => {
-  const [, person, setPerson] = useContext(TitleContext);
+  const { person, setPerson } = useContext(TitleContext);
   const addYear = () => {
     setPerson({
       ...person,
