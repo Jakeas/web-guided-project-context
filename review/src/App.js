@@ -42,7 +42,7 @@ const Grandchild = () => {
 };
 
 const Name = () => {
-  const props = useContext(TitleContext);
+  const { person, setPerson } = useContext(TitleContext);
   const addYear = () => {
     setPerson({
       ...person,
