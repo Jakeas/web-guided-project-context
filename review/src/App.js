@@ -33,6 +33,9 @@ const Grandchild = () => {
   return (
     <>
       <h1>{title}</h1>
+      <Name />
+      <Address />
+      <ProfilePic />
     </>
   );
 };
