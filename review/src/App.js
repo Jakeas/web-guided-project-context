@@ -6,7 +6,11 @@ console.log(TitleContext);
 
 const App = () => {
   const [title, setTitle] = useState("Hello World");
-  return <Child title={title} />;
+  return (
+    <TitleContext.Provider>
+      <Child title={title} />
+    </TitleContext.Provider>
+  );
 };
 
 export default App;
