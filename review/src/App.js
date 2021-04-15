@@ -29,11 +29,11 @@ const Child = () => {
 const Grandchild = () => {
   // STEP 3 - consume data in a nested component from the
   // context Provider
-  const value = useContext(TitleContext);
+  const { title } = useContext(TitleContext);
 
   return (
     <>
-      <h1>{value.title}</h1>
+      <h1>{title}</h1>
       <Name />
       {/* <Address /> */}
       {/* <ProfilePic /> */}
@@ -43,5 +43,5 @@ const Grandchild = () => {
 
 const Name = () => {
   // consume and display Brad's name data from context
-  return <h3>{}</h3>;
+  return <h3>Gibson, Brad</h3>;
 };
