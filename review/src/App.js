@@ -31,8 +31,8 @@ const Grandchild = () => {
   const title = useContext(TitleContext);
 
   return (
-    <div>
-    </div>
+    <>
       <h1>{title}</h1>
+    </>
   );
 };
