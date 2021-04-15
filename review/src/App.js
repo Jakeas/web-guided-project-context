@@ -43,7 +43,7 @@ const Grandchild = () => {
 
 const Name = () => {
   // consume and display Brad's name data from context
-  const { person } = useContext(TitleContext);
+  const { person, setPerson } = useContext(TitleContext);
   return (
     <>
       <h3>
