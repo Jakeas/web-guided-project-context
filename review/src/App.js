@@ -12,7 +12,7 @@ const App = () => {
   // STEP 2 - Provide data to the component tree with
   // the Provider component
   return (
-    <TitleContext.Provider value={title}>
+    <TitleContext.Provider value={person}>
       <Child />
     </TitleContext.Provider>
   );
@@ -34,13 +34,13 @@ const Grandchild = () => {
     <>
       <h1>{title}</h1>
       <Name />
-      <Address />
-      <ProfilePic />
+      {/* <Address /> */}
+      {/* <ProfilePic /> */}
     </>
   );
 };
 
 const Name = () => {
   // consume and display Brad's name data from context
-  return <h3>{(lastName, firstName)}</h3>;
+  return <h3>{}</h3>;
 };
