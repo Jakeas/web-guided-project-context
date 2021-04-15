@@ -43,5 +43,9 @@ const Grandchild = () => {
 
 const Name = () => {
   // consume and display Brad's name data from context
-  return <h3></h3>;
+  return (
+    <h3>
+      {person.name.last}, {person.name.first}
+    </h3>
+  );
 };
