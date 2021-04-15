@@ -11,6 +11,7 @@ const App = () => {
 
   // STEP 2 - Provide data to the component tree with
   // the Provider component
+  // { title, person } === { title: title, person: person }
   return (
     <TitleContext.Provider value={{ title, person }}>
       <Child />
