@@ -13,7 +13,7 @@ const App = () => {
   // the Provider component
   // { title, person } === { title: title, person: person }
   return (
-    <TitleContext.Provider value={{ title, person, setPerson }}>
+    <TitleContext.Provider value={[title, person, setPerson]}>
       <Child />
     </TitleContext.Provider>
   );
