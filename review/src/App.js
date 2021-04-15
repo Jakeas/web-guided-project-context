@@ -19,14 +19,14 @@ const App = () => {
 export default App;
 
 // intermediary component (Dustin-ism)
-const Child = (props) => {
+const Child = () => {
   return <Grandchild />;
 };
 
-const Grandchild = (props) => {
+const Grandchild = () => {
   // STEP 3 - consume data in a nested component from the
   // context Provider
-  const value = useContext(TitleContext);
-  console.log(value);
-  return <h1>{value}</h1>;
+  const title = useContext(TitleContext);
+
+  return <h1>{title}</h1>;
 };
