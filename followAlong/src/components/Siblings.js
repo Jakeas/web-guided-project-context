@@ -5,7 +5,7 @@ const Siblings = () => {
   // const family = useContext(FamilyContext);
   return (
     <FamilyContext.Consumer>
-      {() => (
+      {(family) => (
         <section className="parents">
           {family.siblings.map((p) => (
             <div className="person" key={p.name}>
