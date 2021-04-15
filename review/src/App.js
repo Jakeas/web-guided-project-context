@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useState, useContext } from "react";
 
 // STEP 1 - create a context obj
 const TitleContext = createContext();
