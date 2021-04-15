@@ -29,11 +29,11 @@ const Child = () => {
 const Grandchild = () => {
   // STEP 3 - consume data in a nested component from the
   // context Provider
-  const title = useContext(TitleContext);
+  const value = useContext(TitleContext);
 
   return (
     <>
-      <h1>{title}</h1>
+      <h1>{value.title}</h1>
       <Name />
       {/* <Address /> */}
       {/* <ProfilePic /> */}
