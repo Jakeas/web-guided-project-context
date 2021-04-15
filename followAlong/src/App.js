@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import { data } from "./data";
+import { FamilyContext } from "./contexts/index";
 
 import FamilyTree from "./components/FamilyTree";
 import "./styles.scss";
