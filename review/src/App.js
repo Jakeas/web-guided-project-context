@@ -1,6 +1,7 @@
 import React from "react";
 
 const App = () => {
+  const [title, setTitle] = useState("Hello World");
   return <Child />;
 };
 
@@ -11,5 +12,5 @@ const Child = () => {
 };
 
 const Grandchild = () => {
-  return <h1>Hello World</h1>;
+  return <h1></h1>;
 };
