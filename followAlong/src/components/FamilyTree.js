@@ -6,6 +6,7 @@ import Parents from "./Parents";
 import Siblings from "./Siblings";
 
 export default function FamilyTree() {
+  // hooks pattern 🤩
   const family = useContext(FamilyContext);
   return (
     <section className="FamilyTree">
@@ -18,7 +19,7 @@ export default function FamilyTree() {
       <div className="spacer" />
       <h2>Siblings</h2>
 
-      {/* Siblings will consume data from Context using render props */}
+      {/* Siblings will consume data from Context using render props 🤮 */}
       <Siblings />
     </section>
   );
