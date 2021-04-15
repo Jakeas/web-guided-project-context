@@ -50,6 +50,7 @@ const Name = () => {
         {person.name.last}, {person.name.first}
       </h3>
       <p>Age: {person.dob.age}</p>
+      <button>Happy Birthday!</button>
     </>
   );
 };
