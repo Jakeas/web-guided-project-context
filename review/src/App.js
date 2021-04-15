@@ -60,17 +60,7 @@ const Name = () => {
         {person.name.last}, {person.name.first}
       </h3>
       <p>Age: {person.dob.age}</p>
-      <button
-        onClick={() =>
-          setPerson({
-            ...person,
-            dob: {
-              ...person.dob,
-              age: person.dob.age + 1,
-            },
-          })
-        }
-      >
+      <button onClick={() => addYear(setPerson, person)}>
         Happy Birthday!
       </button>
     </>
