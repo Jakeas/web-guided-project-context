@@ -13,10 +13,11 @@ export default function App() {
     <div className="App">
       <section className="header">
         <h1>Family Trees</h1>
-        {families.map(d => (
+        {families.map((d) => (
           <button
-            className={`family-button ${d.familyName ===
-              activeFamily.familyName && "active"}`}
+            className={`family-button ${
+              d.familyName === activeFamily.familyName && "active"
+            }`}
             key={d.familyName}
             onClick={() => setActiveFamily(d)}
           >
@@ -24,7 +25,7 @@ export default function App() {
           </button>
         ))}
       </section>
-      {activeFamily && <FamilyTree family={activeFamily} />}
+      {activeFamily && <FamilyTree />}
     </div>
   );
 }
