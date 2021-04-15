@@ -41,6 +41,10 @@ const Grandchild = () => {
   );
 };
 
+const addYear = (setPerson) => {
+  setPerson();
+};
+
 const Name = () => {
   // consume and display Brad's name data from context
   const { person, setPerson } = useContext(TitleContext);
@@ -50,7 +54,7 @@ const Name = () => {
         {person.name.last}, {person.name.first}
       </h3>
       <p>Age: {person.dob.age}</p>
-      <button>Happy Birthday!</button>
+      <button onClick={() => addYear(setPerson)}>Happy Birthday!</button>
     </>
   );
 };
