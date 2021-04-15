@@ -45,8 +45,11 @@ const Name = () => {
   // consume and display Brad's name data from context
   const { person } = useContext(TitleContext);
   return (
-    <h3>
-      {person.name.last}, {person.name.first}
-    </h3>
+    <>
+      <h3>
+        {person.name.last}, {person.name.first}
+      </h3>
+      <p>Age: {person.dob.age}</p>
+    </>
   );
 };
