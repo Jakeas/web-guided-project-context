@@ -15,8 +15,8 @@ export default function FamilyTree(props) {
       <div className="spacer" />
       <h2>Siblings</h2>
 
-      {/* Siblings will consume data from Context using render props */}
-      <Siblings family={props.family} />
+      {/* Siblings will consume data from FamilyContext with the useContext hook */}
+      <Siblings />
     </section>
   );
 }
